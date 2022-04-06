@@ -1,4 +1,5 @@
 # 우분투, 데비안 계열
+# https://kubernetes.io/ko/docs/setup/production-environment/tools/kubeadm/install-kubeadm
 
 sudo apt-get update
 sudo apt-get install -y apt-transport-https ca-certificates curl

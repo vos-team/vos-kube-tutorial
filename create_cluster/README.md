@@ -34,5 +34,14 @@ bash apply_calico_cni.sh
 
 ```sh
 kubectl get po -A
-
+# NAMESPACE     NAME                                       READY   STATUS    RESTARTS   AGE
+# kube-system   calico-kube-controllers-56cdb7c587-s8vg6   0/1     Pending   0          15m
+# kube-system   calico-node-4c797                          1/1     Running   0          15m
+# kube-system   coredns-6d4b75cb6d-dt88z                   1/1     Running   0          15m
+# kube-system   coredns-6d4b75cb6d-l4rhx                   1/1     Running   0          15m
+# kube-system   etcd-instance-3                            1/1     Running   1          16m
+# kube-system   kube-apiserver-instance-3                  1/1     Running   1          16m
+# kube-system   kube-controller-manager-instance-3         1/1     Running   0          16m
+# kube-system   kube-proxy-qsdrc                           1/1     Running   0          15m
+# kube-system   kube-scheduler-instance-3                  1/1     Running   1          16m
 ```

@@ -11,3 +11,7 @@ cat <<EOF | sudo tee /etc/docker/daemon.json
 EOF
 sudo systemctl daemon-reload
 sudo systemctl restart docker
+
+sudo mkdir /etc/containerd
+containerd config default | sudo tee /etc/containerd/config.toml
+sudo systemctl restart containerd

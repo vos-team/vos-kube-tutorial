@@ -14,3 +14,4 @@ spec:
       ports:
         - containerPort: 5432
           name: pg
+  # nodeName: instance-1 (hostname) 마스터노드에서 실행할 경우,,

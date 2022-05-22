@@ -17,7 +17,7 @@ con = dbConnect(drv,
 print("Database Connected!")
 
 dbSendQuery(con, "DROP TABLE IF EXISTS work_list;")
-dbSendQuery(con, "CREATE TABLE work_list(id numeric, sido_cd text);")
+dbSendQuery(con, "CREATE TABLE work_list(id numeric, sido_cd text, worker_id text default null, done bool default false);")
 dbSendQuery(con, "INSERT INTO work_list VALUES(1,'11');")
 dbSendQuery(con, "INSERT INTO work_list VALUES(2,'28');")
 dbSendQuery(con, "INSERT INTO work_list VALUES(3,'41');")

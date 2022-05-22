@@ -12,7 +12,7 @@ console.log('Database Connected!')
 
 const main = async () => {
   await sql`DROP TABLE IF EXISTS work_list;`
-  await sql`CREATE TABLE work_list(id numeric, sido_cd text);`
+  await sql`CREATE TABLE work_list(id numeric, sido_cd text, worker_id text default null, done bool default false);`
   await sql`INSERT INTO work_list VALUES(1,'11');`
   await sql`INSERT INTO work_list VALUES(2,'28');`
   await sql`INSERT INTO work_list VALUES(3,'41');`

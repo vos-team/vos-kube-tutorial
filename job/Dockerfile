@@ -1,8 +1,9 @@
 FROM --platform=linux/amd64 r-base
 
 RUN apt update && apt install libpq-dev -y
-COPY ./ /work/
+COPY ./install_packages.R /work/
 WORKDIR /work
-RUN r install_packages.R
+RUN Rscript install_packages.R
 
-CMD r worker.R
+COPY ./*.R /work/
+CMD Rscript worker.R

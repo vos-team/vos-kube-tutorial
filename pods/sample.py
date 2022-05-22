@@ -12,7 +12,7 @@ print("Database Connected!")
 
 cur = con.cursor()
 cur.execute("DROP TABLE IF EXISTS work_list;")
-cur.execute("CREATE TABLE work_list(id numeric, sido_cd text);")
+cur.execute("CREATE TABLE work_list(id numeric, sido_cd text, worker_id text default null, done bool default false);")
 cur.execute("INSERT INTO work_list VALUES(1,'11');")
 cur.execute("INSERT INTO work_list VALUES(2,'28');")
 cur.execute("INSERT INTO work_list VALUES(3,'41');")

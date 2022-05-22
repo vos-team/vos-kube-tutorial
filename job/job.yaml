@@ -1,0 +1,17 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: r-job
+spec:
+  parallelism: 1
+  template:
+    metadata:
+      name: r-job
+    spec:
+      containers:
+        - name: r-job
+          image: nanangqq/r-pg
+          env:
+            - name: POSTGRES_PASSWORD
+              value: '1234'
+      restartPolicy: OnFailure

@@ -1,4 +1,4 @@
-resources:
+resources: # 아래에 등록할 선언파일 리스트를 작성한다
   - pg-pod.yaml
   - r-pod.yaml
   - node-pod.yaml

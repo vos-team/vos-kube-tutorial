@@ -5,7 +5,7 @@ const sql = postgres({
   port: 5432,
   database: 'postgres',
   username: 'postgres',
-  password: '1234',
+  password: process.env.POSTGRES_PASSWORD || 'password',
 })
 
 console.log('Database Connected!')

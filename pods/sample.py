@@ -1,10 +1,11 @@
 import psycopg2
+import os
 
 database = "postgres"
 hostname = "postgres"
 port = "5432"
 user = "postgres"
-pwd = "1234"
+pwd = os.environ.get('POSTGRES_PASSWORD') or 'password'
 
 con = psycopg2.connect(f'postgresql://{user}:{pwd}@{hostname}:{port}/{database}')
 print("Database Connected!")

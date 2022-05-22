@@ -24,11 +24,12 @@ gcloud set compute/zone asia-northeast3-a
 ## 클러스터 생성
 
 ```sh
-gcloud container clusters create vos-kube-cluster \ # vos-kube-cluster: 클러스터 이름
-    --cluster-version=1.22 \ # 클러스터 버전 명시
-    --machine-type=e2-standard-2 \ # 클러스터 노드의 인스턴스 타입(cpu, ram 사양)
-    --disk-type=pd-ssd \ # 클러스터 노드의 디스크 타입
-    --num-nodes 1 # 클러스터에 처음 생성할 노드 개수
+# gcloud container clusters create vos-kube-cluster \ vos-kube-cluster: 클러스터 이름
+#     --cluster-version=1.22 \ 클러스터 버전 명시
+#     --machine-type=e2-standard-2 \ 클러스터 노드의 인스턴스 타입(cpu, ram 사양)
+#     --disk-type=pd-ssd \ 클러스터 노드의 디스크 타입
+#     --num-nodes 1 클러스터에 처음 생성할 노드 개수
+bash create_cluster.sh
 ```
 
 ## 클러스터 인증정보 등록

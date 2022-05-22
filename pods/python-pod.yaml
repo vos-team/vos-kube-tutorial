@@ -8,7 +8,7 @@ spec:
   containers:
     - name: py
       image: python
-      command: ['sleep', '3600']
+      command: ['sleep', '7200']
       env:
         - name: POSTGRES_PASSWORD
           value: '1234'

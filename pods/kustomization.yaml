@@ -1,0 +1,5 @@
+resources:
+  - pg-pod.yaml
+  - r-pod.yaml
+  - node-pod.yaml
+  - python-pod.yaml

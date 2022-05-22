@@ -2,7 +2,7 @@ import psycopg2
 import os
 
 database = "postgres"
-hostname = "postgres"
+hostname = "in-cluster-pg-hostname"
 port = "5432"
 user = "postgres"
 pwd = os.environ.get('POSTGRES_PASSWORD') or 'password'
@@ -19,5 +19,5 @@ cur.execute("INSERT INTO work_list VALUES(3,'41');")
 con.commit()
 
 cur.execute('select * from work_list')
-for id, sido_cd in cur.fetchall():
+for id, sido_cd, _, _ in cur.fetchall():
     print(id, sido_cd)

@@ -1,7 +1,7 @@
 library(RPostgreSQL)
 
 database = "postgres"
-hostname = "postgres"
+hostname = "in-cluster-pg-hostname"
 port = "5432"
 user = "postgres"
 pwd = Sys.getenv('POSTGRES_PASSWORD')

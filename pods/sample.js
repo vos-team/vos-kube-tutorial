@@ -1,7 +1,7 @@
 const postgres = require('postgres')
 
 const sql = postgres({
-  host: 'postgres',
+  host: 'in-cluster-pg-hostname',
   port: 5432,
   database: 'postgres',
   username: 'postgres',

@@ -5,7 +5,7 @@ get_train_data = function(sido_cd) {
 
     Sys.sleep(3) # 데이터 가져오기
     train_data = data.frame(
-        pnu=paste(rep(sido_cd, 3), c("68010600109450010","68010600109450010","68010600109450010"), sep=''),
+        pnu=paste(rep(sido_cd, 3), c("68010600109450010","68010600109480000","68010600109460001"), sep=''),
         landuse=c('일반상업지역','준주거지역','제2종일반주거지역'),
         price=c(100, NA ,70),
         stringsAsFactors = FALSE)

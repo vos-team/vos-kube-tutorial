@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: pg # pod 이름
   labels:
-    app: postgres
+    app: postgres-database # 서비스 설정할 때 맞춰줘야 함
 spec:
   containers:
     - name: pg
